@@ -1,3 +1,4 @@
 [submodule "Reactive"]
 	path = Reactive
 	url = https://github.com/ReactiveCocoa/ReactiveCocoa.git
+	ignore = dirty
