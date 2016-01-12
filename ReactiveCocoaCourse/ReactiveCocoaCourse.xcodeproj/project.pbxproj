@@ -11,6 +11,8 @@
 		8635D0D81BE861EB00696D83 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8635D0D01BE861C800696D83 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8635D12C1BE8636800696D83 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8635D1211BE8635700696D83 /* Result.framework */; };
 		8635D12D1BE8636800696D83 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8635D1211BE8635700696D83 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8659D3551C3A4B640062A5CA /* FirstCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8659D3541C3A4B640062A5CA /* FirstCourseViewController.m */; };
+		8659D3591C3A6F280062A5CA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8659D3581C3A6F280062A5CA /* SecondViewController.m */; };
 		8659FB2C1BE20D1800FE3C66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8659FB2B1BE20D1800FE3C66 /* main.m */; };
 		8659FB2F1BE20D1800FE3C66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8659FB2E1BE20D1800FE3C66 /* AppDelegate.m */; };
 		8659FB321BE20D1800FE3C66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8659FB311BE20D1800FE3C66 /* ViewController.m */; };
@@ -168,6 +170,10 @@
 /* Begin PBXFileReference section */
 		8635D0C21BE861C800696D83 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = ../Reactive/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 		8635D1111BE8635700696D83 /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = ../Reactive/Carthage/Checkouts/Result/Result.xcodeproj; sourceTree = "<group>"; };
+		8659D3531C3A4B640062A5CA /* FirstCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCourseViewController.h; sourceTree = "<group>"; };
+		8659D3541C3A4B640062A5CA /* FirstCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCourseViewController.m; sourceTree = "<group>"; };
+		8659D3571C3A6F280062A5CA /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		8659D3581C3A6F280062A5CA /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		8659FB271BE20D1800FE3C66 /* ReactiveCocoaCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoaCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8659FB2B1BE20D1800FE3C66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8659FB2D1BE20D1800FE3C66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -241,6 +247,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8659D3511C3A47280062A5CA /* Categary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categary;
+			sourceTree = "<group>";
+		};
+		8659D3521C3A4B450062A5CA /* FirstCourse */ = {
+			isa = PBXGroup;
+			children = (
+				8659D3531C3A4B640062A5CA /* FirstCourseViewController.h */,
+				8659D3541C3A4B640062A5CA /* FirstCourseViewController.m */,
+			);
+			name = FirstCourse;
+			sourceTree = "<group>";
+		};
+		8659D3561C3A6F0B0062A5CA /* SecondCourse */ = {
+			isa = PBXGroup;
+			children = (
+				8659D3571C3A6F280062A5CA /* SecondViewController.h */,
+				8659D3581C3A6F280062A5CA /* SecondViewController.m */,
+			);
+			name = SecondCourse;
+			sourceTree = "<group>";
+		};
 		8659FB1E1BE20D1800FE3C66 = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +297,9 @@
 		8659FB291BE20D1800FE3C66 /* ReactiveCocoaCourse */ = {
 			isa = PBXGroup;
 			children = (
+				8659D3561C3A6F0B0062A5CA /* SecondCourse */,
+				8659D3521C3A4B450062A5CA /* FirstCourse */,
+				8659D3511C3A47280062A5CA /* Categary */,
 				8659FB2D1BE20D1800FE3C66 /* AppDelegate.h */,
 				8659FB2E1BE20D1800FE3C66 /* AppDelegate.m */,
 				8659FB301BE20D1800FE3C66 /* ViewController.h */,
@@ -549,8 +583,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8659D3591C3A6F280062A5CA /* SecondViewController.m in Sources */,
 				8659FB321BE20D1800FE3C66 /* ViewController.m in Sources */,
 				8659FB2F1BE20D1800FE3C66 /* AppDelegate.m in Sources */,
+				8659D3551C3A4B640062A5CA /* FirstCourseViewController.m in Sources */,
 				8659FB2C1BE20D1800FE3C66 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -700,9 +736,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				HEADER_SEARCH_PATHS = "${SRCROOT}";
+				HEADER_SEARCH_PATHS = /Users/zonyet/Desktop/Test/StudyCourse/Reactive/ReactiveCocoa;
 				INFOPLIST_FILE = ReactiveCocoaCourse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zoneyet.ReactiveCocoaCourse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -713,9 +751,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				HEADER_SEARCH_PATHS = "${SRCROOT}";
+				HEADER_SEARCH_PATHS = /Users/zonyet/Desktop/Test/StudyCourse/Reactive/ReactiveCocoa;
 				INFOPLIST_FILE = ReactiveCocoaCourse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zoneyet.ReactiveCocoaCourse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
